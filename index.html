@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0b88fa2e74.js" crossorigin="anonymous"></script>
+    <script src="Script.js" defer></script>
     <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
@@ -20,21 +21,21 @@
             <img class="img-logo" src="img-part1/logo.png" alt="LOGO">
             <nav>
                 <ul class="nav-list">
-                    <li class="Home main-li"><a class="main-link" href="#">Home <span class="arrow"><i class="fa-solid fa-angle-up"></i></span></a>
+                    <li class="Home main-li"><a class="main-link" href="#">Home <i class="fa-solid fa-angle-up arrow"></i></a>
                         <ul class="drop-down home-dd">
                             <li class="sous-li"><a class="second-link" href="#">Home 01</a></li>
                             <hr class="hr-menu">
                             <li class="sous-li"><a class="second-link" href="#">Home 02</a></li>
                         </ul>
                     </li>
-                    <li class="About main-li"><a class="main-link" href="#">About Me <span class="arrow"><i class="fa-solid fa-angle-up"></i></span></a>
+                    <li class="About main-li"><a class="main-link" href="#">About Me <i class="fa-solid fa-angle-up arrow"></i></a>
                         <ul class="drop-down about-dd">
                             <li class="sous-li"><a class="second-link" href="#">About Me 01</a></li>
                             <hr class="hr-menu">
                             <li class="sous-li"><a class="second-link" href="#">About Me 02</a></li>
                         </ul>
                     </li>
-                    <li class="Service main-li"><a class="main-link" href="#">Services <span class="arrow"><i class="fa-solid fa-angle-up"></i></span></a>
+                    <li class="Service main-li"><a class="main-link" href="#">Services <i class="fa-solid fa-angle-up arrow"></i></a>
                         <ul class="drop-down service-dd">
                             <li class="sous-li"><a class="second-link" href="#">Service 01</a></li>
                             <hr class="hr-menu">
@@ -45,7 +46,7 @@
                             <li class="sous-li"><a class="second-link" href="#">Service Details 02</a></li>
                         </ul>
                     </li>
-                    <li class="Pages main-li"><a class="main-link" href="#">Pages <span class="arrow"><i class="fa-solid fa-angle-up"></i></span></a>
+                    <li class="Pages main-li"><a class="main-link" href="#">Pages <i class="fa-solid fa-angle-up arrow"></i></a>
                         <ul class="drop-down pages-dd">
                             <li class="sous-li"><a class="second-link" href="#">Portfolio 01</a></li>
                             <hr class="hr-menu">
@@ -69,7 +70,7 @@
                             <hr class="hr-menu">
                         </ul>
                     </li>
-                    <li class="Blog main-li"><a class="main-link" href="#">Blog <span class="arrow"><i class="fa-solid fa-angle-up"></i></span></a>
+                    <li class="Blog main-li"><a class="main-link" href="#">Blog <i class="fa-solid fa-angle-up arrow"></i></a>
                         <ul class="drop-down blog-dd">
                             <li class="sous-li"><a class="second-link" href="#">Blog Grid</a></li>
                             <hr class="hr-menu">
@@ -81,7 +82,7 @@
                             <hr class="hr-menu">
                         </ul>
                     </li>
-                    <li class="Contact main-li"><a class="main-link" href="#">Contact Us <span class="arrow"><i class="fa-solid fa-angle-up"></i></span></a>
+                    <li class="Contact main-li"><a class="main-link" href="#">Contact Us <i class="fa-solid fa-angle-up arrow"></i></a>
                         <ul class="drop-down contact-dd">
                             <li class="sous-li"><a class="second-link" href="#">Contact Us 01</a></li>
                             <hr class="hr-menu">
@@ -91,7 +92,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="button-model1"> <div class="but-hover-effect"></div><span class="but-text">BOOK APPOINTMENT</span></button>
+        <button class="button-model1"> <div class="but-hover-effect"></div><span class="but-text">BOOK APPOINTMENT</span></button>
         </div>
     </header>
     <hr class="hr-bot-margin">
@@ -99,11 +100,14 @@
         <section class="S1">
             <div class="S1-part1">
                 <p class="pre-title gradiant-bg-text">UX/UI DESIGNER</p>
-                <h1><span>Hey! I Am</span> <img src="img-part1/hand.png" alt="hand"><br> <span class="gradiant-bg-text">James Smith</span></h1>
+                <h1><span>Hey! I Am</span> <img class="S1-hand" src="img-part1/hand.png" alt="hand"><br> <span class="gradiant-bg-text">James Smith</span></h1>
                 <p class="aft-title">I'm creative designer based in India, and I'm very passionate and dedicated to my work.</p>
                 <div class="S1-but-sec">
                     <button class="button-model1"><div class="but-hover-effect"></div><span class="but-text">BUY ME COFFEE</span></button>
-                    <button class="S1-circle-but"><img src="img-part1/play-button.png" alt="play-button"></button>
+                    <div class="div-play-but">
+                        <div class="play-but-effect"></div>
+                        <button class="S1-circle-but"><img src="img-part1/play-button.png" alt="play-button"></button>
+                    </div>
                 </div>
                 <div class="S1-social-links">
                     <p class="S1-social-link-element">Follow Me:</p>
@@ -120,17 +124,18 @@
                 </div>
                 <div class="div-flotante awards-div">
                     <div class="img-container">
-                        <img class="float-img" src="img-part1/alimnet-box-icon1.png" alt="medaille">
+                        <img src="img-part1/alimnet-box-icon1.png" alt="medaille">
                     </div>
                     <p class="awards-div-text">Best Design Awards</p>
                 </div>
                 <div class="div-flotante  happy-div">
-                    <div class="img-container">
-                        
-                    <img class="float-img" src="img-part1/alimnet-box-icon2.png" alt="emot-star-eyes">
+                    <div class="img-container"> 
+                        <img src="img-part1/alimnet-box-icon2.png" alt="emot-star-eyes">
                     </div>
-                    <p class="awards-div-text">Happy Clients</p>
-                    <p class="awards-div-text">25k</p>
+                    <div class="awards-div-text">
+                        <p class="happy-div-text">Happy Clients</p>
+                        <p class="gradiant-bg-text happy-div-25k">25k</p>
+                    </div>
                 </div>
             </div>
         </section>

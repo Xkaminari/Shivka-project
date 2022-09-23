@@ -48,7 +48,46 @@ body {
 
 /* -------------------------------------------Animation------------------------------------------- */
 
+@keyframes by-by-hand {
+    0%   {transform: rotate(0deg);}
+    10%   {transform: rotate(15deg);}
+    20% {transform: rotate(-15deg);}
+    30%   {transform: rotate(15deg);}
+    40% {transform: rotate(-15deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(0deg);}
+    70%   {transform: rotate(0deg);}
+    80%   {transform: rotate(0deg);}
+    90%   {transform: rotate(0deg);}
+    100%   {transform: rotate(0deg);}
+}
 
+@keyframes play-button {
+    0% {transform: scale(1) ; opacity: 1;}
+    40% {transform: scale(1.5) ; opacity: 0;}
+    50% {transform: scale(1.5) ; opacity: 0;}
+    60% {transform: scale(1.5) ; opacity: 0;}
+    70% {transform: scale(1.5) ; opacity: 0;}
+    80% {transform: scale(1.5) ; opacity: 0;}
+    90% {transform: scale(1.5) ; opacity: 0;}
+    100% {transform: scale(1.5) ; opacity: 0;}
+}
+
+@keyframes bg-james {
+    0%   {transform: rotate(2deg);}
+    25%   {transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    75%   {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+}
+
+@keyframes div-flotante {
+    0% {transform: translate(0, 0);}
+    25%   {transform: translate(25px, -10px);}
+    50% {transform: translate(0, -20px);}
+    75%   {transform: translate(25px, -10px);}
+    100% {transform: translate(0, 0);}
+}
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -90,6 +129,14 @@ nav {
 .main-li:hover .main-link {
     color: #F37474;
 }
+
+.arrow {
+    transition: 0.5s;
+}
+
+.main-li:hover .main-link .arrow {
+    transform: rotate(180deg);
+} 
 
 .sous-li:hover .second-link {
     color: #F37474;
@@ -193,14 +240,20 @@ nav {
 .S1 {
     display: flex;
     position: relative;
-    justify-content: space-between;
-    width: 80%;
+    /* justify-content: space-around; */
+    width: 70%;
     margin: auto;
 }
 
 .S1-part1 {
     width: 100%;
     padding-top: 90px;
+}
+
+.S1-hand {
+    animation-name: by-by-hand;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .gradiant-bg-text {
@@ -222,6 +275,7 @@ nav {
     font-size: 1.2em;
     line-height: 30px;
     margin-bottom: 25px;
+    width: 70%;
 }
 
 h1 {
@@ -242,8 +296,27 @@ h1 {
     height: 60px;
     border-radius: 50%;
     border: 0;
-    margin-left: 30px;
     background: linear-gradient(to right, #fb7878 0%, #ffaf74 100%);
+}
+
+.div-play-but {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 30px;
+}
+
+.play-but-effect {
+    position: absolute;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #fb7878 0%, #ffaf74 100%);
+    animation-name: play-button;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
 }
 
 .S1-social-links {
@@ -286,6 +359,9 @@ h1 {
 .james-bg {
     position: absolute;
     width: 40vw;
+    animation-name: bg-james;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .div-flotante {
@@ -296,8 +372,24 @@ h1 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     position: absolute;
     z-index: 5;
-    border-radius: 15px;
-    padding: 20px 40px;
+    border-radius: 25px;
+    padding: 20px 40px 20px 20px;
+}
+
+.awards-div {
+    animation-name: div-flotante;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    animation-direction: reverse;
+}
+
+.happy-div {
+    animation-name: div-flotante;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    animation-direction: reverse;
 }
 
 .img-container {
@@ -309,11 +401,12 @@ h1 {
     background-color: #D4F8CA;
     border-radius: 50%;
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .awards-div {
-    top: 0;
+    top: 30%;
+    right: 0;
 }
 
 .awards-div-text {
@@ -321,9 +414,17 @@ h1 {
     font-weight: 600;
 }
 
-.float-img {
-    width: 20px;
-    height: 25px;
+.happy-div {
+    bottom: 10%;
+}
+
+.happy-div-text {
+    width: 110px;
+}
+
+.happy-div-25k {
+    font-weight: 900;
+    font-size: 1.5em;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
