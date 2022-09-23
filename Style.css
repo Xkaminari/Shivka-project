@@ -58,7 +58,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 68%;
+    width: 80%;
     height: 140px;
     margin: auto;
 }
@@ -192,13 +192,15 @@ nav {
 
 .S1 {
     display: flex;
-    width: 68%;
+    position: relative;
+    justify-content: space-between;
+    width: 80%;
     margin: auto;
 }
 
 .S1-part1 {
     width: 100%;
-    padding-top: 110px;
+    padding-top: 90px;
 }
 
 .gradiant-bg-text {
@@ -273,14 +275,55 @@ h1 {
 
 .james-img {
     z-index: 1;
+    width: 40vw;
 }
 
 .james-line {
     position: absolute;
+    width: 40vw;
 }
 
 .james-bg {
     position: absolute;
+    width: 40vw;
+}
+
+.div-flotante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute;
+    z-index: 5;
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #D4F8CA;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.awards-div {
+    top: 0;
+}
+
+.awards-div-text {
+    width: 100px;
+    font-weight: 600;
+}
+
+.float-img {
+    width: 20px;
+    height: 25px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
