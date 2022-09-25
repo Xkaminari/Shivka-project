@@ -20,7 +20,7 @@ body {
     font-size: 0.9em;
     word-spacing: 0.2px;
     padding: 20px 30px;
-    background: linear-gradient(90deg, rgba(194,120,251,1) 0%, rgba(249,115,255,1) 100%);;
+    background: linear-gradient(90deg, rgba(194,120,251,1) 0%, rgba(249,115,255,1) 100%);
     border-radius: 40px;
     position: relative;
     overflow: hidden;
@@ -159,6 +159,7 @@ nav {
     transition-duration: 0.4s;
     transform: translate(0 , 20px);
     visibility: hidden;
+    z-index: 10;
 }
 
 .hr-menu {
@@ -439,7 +440,7 @@ h1 {
     justify-content: space-between;
     width: 70%;
     margin: auto;
-    margin-top: 100px;
+    padding: 100px 0 100px 0;
 }
 
 .S2-part1 {
@@ -526,14 +527,22 @@ h1 {
 
 .select-menu {
     padding: 0;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
     list-style: none;
+    border-bottom: 2px solid #c278fb;
+}
+
+.select-menu li {
+    display: inline;
 }
 
 .select-menu-butt {
-    
+    border: 0;
+    background: none;
+    font-weight: 550;
+    font-size: 1em;
+    color: #3E4347;
+    padding: 25px 63.15px;
+    display: inline;
 }
 
 .hided-grid {
