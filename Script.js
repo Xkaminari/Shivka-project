@@ -65,9 +65,11 @@ Awards.button.onclick = function() {
     DisplayNewInfo(Awards)
     HideDisplayInfo(Details, Skills)
 }
+
 Skills.button.onclick = function() {
     NewMenuInfo(Skills);
     OldMenuInfo(Awards, Details);
     DisplayNewInfo(Skills)
     HideDisplayInfo(Awards, Details)
 }
+
