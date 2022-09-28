@@ -609,5 +609,107 @@ h1 {
 }
 
 .skills-hr {
-    margin: 25px 0;
+    margin: 25px 0
+}
+
+/* -------------------------------------------------------------------Media-Qwerys----------------------------------------------------------------------------------- */
+
+@media  only screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    .banner-lines {
+        width: 90vw;
+    }
+    .banner-obect {
+        width: 30vw;
+    }
+    .banner-obect2 {
+        width: 30vw;
+    }
+    #BgCercles {
+        width: 30vw;
+    }
+    .Nav-fix {
+        margin: 0 0 0 15px;
+    }
+    nav {
+        display: none;
+    }
+    .Nav-fix button {
+        display: none;
+    }
+    .S1{
+        display: block;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    .S1-part1 {
+        padding: 0;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    .aft-title {
+        width: 100%;
+    }
+    .S1-but-sec {
+        justify-content: space-around;
+    }
+    .S1-social-links {
+        margin: 30px auto 20px auto;
+        justify-content: center;
+    }
+    .james-collage {
+        margin: auto;
+        justify-content: center;
+    }
+    .james-img {
+        width: 90vw;
+    }
+    .james-line {
+        width: 90vw;
+    }
+    .james-bg {
+        width: 90vw;
+    }
+    .div-flotante {
+        padding: 10px 25px 10px 10px;
+    }
+    .awards-div {
+        top: 70%;
+        right: 5%;
+    }
+    .happy-div {
+        bottom: 5%;
+    }
+    .S2 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .S2-part1 {
+        width: 90%;
+        margin: auto;
+    }
+    .S2-circle {
+        top: 54%;
+        right: 0.5%;
+    }
+    .james-img2 {
+        width: 90vw;
+        height: auto;
+    }
+    .S2-part2 {
+        width: 90%;
+        margin: auto;
+    }
+    .S2-HugTitle-part2 {
+        font-size: 2.5em;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .select-menu-butt {
+        padding: 15px 13.8px;
+    }
 }
